@@ -1,0 +1,65 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.calculator{
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-size: cover; /* Adjusts the image to cover the entire element */
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    border: 2px solid rgba(255,255,255,0.1);
+    height:auto;
+    width: auto;
+    background: rgba(255,255,255,0.1);
+    border-radius:16px;
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+    padding: 25px;
+}
+.display{
+    height: 10vh;
+    width: 200px;
+    border:1px solid rgba(255,255,255,0.5);
+    margin-bottom: 20px;
+    background: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    flex-direction: column;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.displayans{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.row{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.num-button{
+    height: 25px;
+    flex: auto;
+    display: flex;
+    justify-content: center;
+}
+.numbers,
+.function{
+    width: 75%;
+    border-radius: 20%;
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+}
+.numbers:active,
+.function:active{
+    opacity: 10%;
+}
